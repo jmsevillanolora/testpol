@@ -2,31 +2,67 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mi web en GitHub Pages</title>
-  <style>
-    :root{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu;line-height:1.5}
-    body{margin:0;background:#0f172a;color:#e2e8f0}
-    header{padding:72px 24px;text-align:center;background:linear-gradient(180deg,#111827, #0f172a)}
-    h1{font-size:clamp(28px,6vw,44px);margin:0 0 12px}
-    p.lead{opacity:.9;max-width:720px;margin:0 auto}
-    main{max-width:960px;margin:32px auto;padding:0 24px}
-    section{background:#111827;border:1px solid #1f2937;border-radius:16px;padding:24px}
-    a{color:#93c5fd}
-    footer{opacity:.7;text-align:center;padding:40px 24px}
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi Web en GitHub Pages</title>
+  <meta name="description" content="Starter limpio y accesible para publicar gratis con GitHub Pages." />
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+  <meta property="og:title" content="Mi Web en GitHub Pages" />
+  <meta property="og:description" content="Starter limpio y accesible para publicar gratis con GitHub Pages." />
+  <meta property="og:image" content="/assets/img/social-card.png" />
+  <meta name="theme-color" content="#111827" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <script defer src="/assets/js/main.js"></script>
 </head>
 <body>
-  <header>
-    <h1>¡Hola! 👋</h1>
-    <p class="lead">Bienvenido a mi sitio gratuito publicado con <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <nav class="wrap">
+      <div class="brand">🚀 Mi Web</div>
+      <button id="themeToggle" class="btn" aria-label="Cambiar tema">🌓</button>
+    </nav>
+    <section class="hero wrap">
+      <h1>Publica tu web gratis con <span>GitHub Pages</span></h1>
+      <p class="lead">Este starter minimalista incluye HTML, CSS y JS listos para desplegar. Sin frameworks, rápido y accesible.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://pages.github.com/" target="_blank" rel="noopener">¿Qué es GitHub Pages?</a>
+        <a class="btn" href="https://github.com/new" target="_blank" rel="noopener">Crear repositorio</a>
+      </div>
+    </section>
   </header>
-  <main>
-    <section>
-      <h2>Sobre mí</h2>
-      <p>Aquí puedes contar quién eres, qué haces y cómo contactarte.</p>
+
+  <main id="contenido" class="wrap">
+    <section class="card">
+      <h2>Cómo personalizar</h2>
+      <ul>
+        <li>Edita <code>index.html</code> para cambiar textos y secciones.</li>
+        <li>Toca variables en <code>assets/css/styles.css</code> para colores y tipografías.</li>
+        <li>Usa <code>assets/img/</code> para tus imágenes y actualiza <code>og:image</code>.</li>
+      </ul>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h3>Rápido</h3>
+        <p>Sin dependencias ni builds. Arrastra y suelta en GitHub y se publica solo.</p>
+      </article>
+      <article class="card">
+        <h3>Accesible</h3>
+        <p>Contraste alto, foco visible, navegación por teclado y etiqueta <code>skip</code>.</p>
+      </article>
+      <article class="card">
+        <h3>Personalizable</h3>
+        <p>Variables CSS para colores, radios y anchuras. Oscuro/claro con un clic.</p>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>Contacto</h2>
+      <p>Escribe a <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a> o agrega tus redes aquí.</p>
     </section>
   </main>
-  <footer>© 2025 Tu Nombre</footer>
+
+  <footer class="site-footer wrap">
+    <small>© 2025 Tu Nombre · Hecho con ♥ y GitHub Pages</small>
+  </footer>
 </body>
 </html>
